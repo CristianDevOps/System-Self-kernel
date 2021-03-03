@@ -12,7 +12,11 @@ class Main # calme case
     end 
 
     def clase_object
-        
+        if @clase.nil?
+            puts '...'
+        else
+            puts "Clase basé del objeto #{@objeto} es: #{clase}"
+        end         
     end    
 
     def metodo_kernel
