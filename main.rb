@@ -57,7 +57,16 @@ class Main # calme case
      end 
 end  
 
-if __FILE__ == $0
+=begin
+
+Esto permite que un archivo sea utilizado como
+una biblioteca, y no ejecutar código en ese
+contexto. Pero si el archivo está siendo usado
+como un ejecutable, entonces ejecuta ese
+código.
+
+=end
+if __FILE__ == $0 #Esta verificación dice ?si este es el achivo principal? ?
 
     instances = Main.new
     instances.objeto = self.to_s
